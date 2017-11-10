@@ -133,11 +133,19 @@ nav ul li a:active {
     text-decoration: none;
 }
 
+#plFlag {
+    max-width: 80px;
+    float: left;
+}
+#gbFlag {
+    max-width: 80px;
+}
+
 
 /*///////////////////////////////////end/////////////////////////////////*/
 
 #aboutMe {
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 1.1rem;
     font-style: italic;
         
@@ -162,6 +170,19 @@ nav ul li a:active {
 }
 
 /*///////////////////////////////////////end///////////////////////////////////*/
+
+/*///////////////////////////////skills section style///////////////////////////*/
+
+#skills {
+    margin-top: 50px;
+}
+
+.html, .css, .tech {
+    margin-top: 50px;
+}
+
+/*////////////////////////////////////////end///////////////////////////////////*/
+
 
 
 @media(min-width: 768px){
