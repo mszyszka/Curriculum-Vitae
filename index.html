@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet"> </head>
@@ -160,12 +162,37 @@
             <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).</p>
             <div class="logo">Michał<span>Szyszka</span></div>
         </footer>
+        <button id="topBtn">TOP</button>
     </div>
     <script>
+        //Menu open
         function myHamburger(x) {
             x.classList.toggle("change");
             document.getElementsByClassName("navMenu")[0].classList.toggle('navOpen');
         }
+        
+        //Top button:
+        // 1. lets first listen for the scroll event
+        $(window).scroll(function () {
+            // top value in this case 0
+            var windowScroll = $(this).scrollTop();
+            // determine when to show button
+            var showScrollBtn = 120;
+            // fadein / fadeout back to  top button
+            if (windowScroll > showScrollBtn) {
+                $('#topBtn').fadeIn();
+            }
+            else {
+                $('#topBtn').fadeOut();
+            }
+        });
+        // on click:
+        $('#topBtn').click(function () {
+            $('body,html').animate({
+                // position you want  scroll to
+                scrollTop: 0
+            }, 500);
+        });
     </script>
 </body>
 
