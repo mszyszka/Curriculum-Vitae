@@ -91,6 +91,10 @@ nav .navMenu {
     text-align: center;
     display: none;
     opacity: 0;
+    -webkit-box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.75);
+box-shadow: 0px 8px 5px -5px rgba(0,0,0,0.75);
+    padding-bottom: 50px;
 }
 
 nav .navMenu.navOpen {
@@ -136,9 +140,21 @@ nav ul li a:active {
 #plFlag {
     max-width: 80px;
     float: left;
+    display: inline-block;
+    position: relative;
+    left: 108px;
+    margin-top: 20px;
 }
 #gbFlag {
-    max-width: 80px;
+    max-width: 85px;
+    display: inline-block;
+    position: relative;
+    right: 0px;
+    margin-top: 20px;
+}
+
+nav ul li:last-child {
+/*    margin-top: 50px;*/
 }
 
 
@@ -175,12 +191,22 @@ nav ul li a:active {
 
 #skills {
     margin-top: 50px;
+    font-size: 1.1rem;
+    font-style: italic;
 }
 
 .html, .css, .tech {
     margin-top: 50px;
 }
 
+#skills h1 {
+    font-size: 1.4rem;
+}
+
+#skills ul {
+    list-style-type: disc;
+    padding: 25px;
+}
 /*////////////////////////////////////////end///////////////////////////////////*/
 
 
