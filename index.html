@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <link href="css/reset.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet"> </head>
@@ -28,17 +28,17 @@
                 </div>
                 <div class="clearfix"></div>
                 <ul class="navMenu">
-                    <li><a href="#">JavaScript</a></li>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">Technologie</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#" id="link1">JavaScript</a></li>
+                    <li><a href="#" id="link2">CSS</a></li>
+                    <li><a href="#" id="link3">HTML</a></li>
+                    <li><a href="#" id="link4">Technologie</a></li>
+                    <li><a href="http://www.xn--micha-szyszka-portfolio-g2d.pl/" target="_blank">Portfolio</a></li>
+                    <li><a href="https://github.com/mszyszka" target="_blank">GitHub</a></li>
                     <li id="plFlag">
-                        <a href="#"><img src="img/flaga-polski.jpg"></a>
+                        <a href="#"><img src="img/flaga-polski.jpg" alt="flaga Polski"></a>
                     </li>
                     <li id="gbFlag">
-                        <a href="#"><img src="img/flaga-wielkiej-brytanie.jpg"></a>
+                        <a href="#"><img src="img/flaga-wielkiej-brytanie.jpg" alt="flaga Wielkiej Brytanii"></a>
                     </li>
                 </ul>
             </nav>
@@ -65,7 +65,7 @@
         <section id="skills">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <article class="js">
+                    <article id="js">
                         <h1><span>JAVA</span>SCRIPT</h1>
                         <br/>
                         <ul>
@@ -98,26 +98,7 @@
                     </article>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <article class="html">
-                        <h1>HTML</h1>
-                        <br/>
-                        <br/>
-                        <a href="https://github.com/mszyszka" target="_blank">
-                            <p>Aby zobaczyć jak posługuję się kodem HTML zerknij do mojego github'a</p>
-                        </a>
-                        <ul>
-                            <li>Posługuję się nowymi znacznikami <strong>HTML5</strong> w celu precyzyjnego definiowania poszczegulnych częćści kodu</li>
-                            <li>Posługuję się porpawnie znacznikami strukturalnymi</li>
-                            <li>Dbam o odpowiednią <strong>semantykę</strong> kodu</li>
-                            <li>Korzystam z Google Fonts</li>
-                            <li>Potrafię wykonać hiperłączę które przeniesie nas w wybrane miejsce na stronie</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <article class="css">
+                    <article id="css">
                         <h1>CSS</h1>
                         <br/>
                         <br/>
@@ -144,8 +125,27 @@
                         </ul>
                     </article>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <article class="tech">
+                    <article id="html">
+                        <h1>HTML</h1>
+                        <br/>
+                        <br/>
+                        <a href="https://github.com/mszyszka" target="_blank">
+                            <p>Aby zobaczyć jak posługuję się kodem HTML zerknij do mojego github'a</p>
+                        </a>
+                        <ul>
+                            <li>Posługuję się nowymi znacznikami <strong>HTML5</strong> w celu precyzyjnego definiowania poszczegulnych częćści kodu</li>
+                            <li>Posługuję się porpawnie znacznikami strukturalnymi</li>
+                            <li>Dbam o odpowiednią <strong>semantykę</strong> kodu</li>
+                            <li>Korzystam z Google Fonts</li>
+                            <li>Potrafię wykonać hiperłączę które przeniesie nas w wybrane miejsce na stronie</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <article id="tech">
                         <h1> TECHNOLOGIE</h1>
                         <br/>
                         <ul>
@@ -170,7 +170,6 @@
             x.classList.toggle("change");
             document.getElementsByClassName("navMenu")[0].classList.toggle('navOpen');
         }
-        
         //Top button:
         // 1. lets first listen for the scroll event
         $(window).scroll(function () {
@@ -192,6 +191,35 @@
                 // position you want  scroll to
                 scrollTop: 0
             }, 500);
+        });
+        // scroll to function
+        jQuery(function($){
+            //scroll reset
+            $.scrollTo(0);
+            $('#link1').click(function(){
+                $.scrollTo($("#js"),500);   
+            });
+        });
+        jQuery(function($){
+            //scroll reset
+            $.scrollTo(0);
+            $('#link2').click(function(){
+                $.scrollTo($("#css"),600);   
+            });
+        });
+        jQuery(function($){
+            //scroll reset
+            $.scrollTo(0);
+            $('#link3').click(function(){
+                $.scrollTo($("#html"),700);   
+            });
+        });
+        jQuery(function($){
+            //scroll reset
+            $.scrollTo(0);
+            $('#link4').click(function(){
+                $.scrollTo($("#tech"),800);   
+            });
         });
     </script>
 </body>
