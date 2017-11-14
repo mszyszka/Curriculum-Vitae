@@ -276,8 +276,50 @@ footer {
 /*////////////////////////////////////////end/////////////////////////////////*/
 
 @media(min-width: 768px) {
-    #personalData {
+    header{
         margin-top: 50px;
     }
-    #myTxt {}
+    #aboutMe{
+        margin-top: 100px;
+    }
+    #personalData {
+        margin-top: 80px;
+    }
+    #skills {
+        margin-top: 100px;
+    }
+    #html, #tech {
+        margin-top: 100px;
+    }
+    footer {
+        padding-top: 100px;
+    }
+    #topBtn {
+        width: 65px;
+        height: 65px;
+        
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        width: 800px;
+    }
+}
+@media(min-width: 1200px){
+    .container{
+        width: 1000px;
+    }
+     #topBtn {
+        width: 70px;
+        height: 70px;
+        
+    }
+}
+
+@media(min-width: 1400px){
+    .container{
+        width: 1200px;
+    }
+     
 }
