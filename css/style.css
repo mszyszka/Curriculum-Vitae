@@ -276,10 +276,10 @@ footer {
 /*////////////////////////////////////////end/////////////////////////////////*/
 
 @media(min-width: 768px) {
-    header{
+    header {
         margin-top: 50px;
     }
-    #aboutMe{
+    #aboutMe {
         margin-top: 100px;
     }
     #personalData {
@@ -288,7 +288,8 @@ footer {
     #skills {
         margin-top: 100px;
     }
-    #html, #tech {
+    #html,
+    #tech {
         margin-top: 100px;
     }
     footer {
@@ -297,61 +298,75 @@ footer {
     #topBtn {
         width: 65px;
         height: 65px;
-        
     }
 }
 
-@media(min-width: 992px){
-    .container{
+@media(min-width: 992px) {
+    .container {
         width: 800px;
     }
-    .hamburgerContainer{
+    .hamburgerContainer {
         display: none;
     }
-
-    nav .navMenu {
-    display: inherit;
-        opacity: 100;
-}
-    h1{
+    nav .navMenu {}
+    h1 {
         display: inline-block;
     }
-    .navContainer  {
-        float: right;
-
+    .navContainer {
+        float: left;   /*over 1200 px float : right*/
+        margin-top: 50px; /*over 1200 px margin-top : -21px*/
+        
     }
-    .navContainer .navMenu  {
+    .navContainer .navMenu {
         padding-bottom: 0;
+        display: inherit;
+        opacity: 100;
+        box-shadow: none;
     }
-    .navContainer .navMenu li a  {
+    .navContainer .navMenu li a {
         display: block;
     }
-    .navContainer .navMenu li  {
+    .navContainer .navMenu li {
         display: inline-block;
+        padding: 10px 15px; /*over 1200 px padding : 10px*/
     }
-    .navContainer .navMenu li:first-child
-    {
+    .navContainer .navMenu li:first-child {
         margin-top: 0;
+        padding-left: 0; /*over 1200 px padding : inherit*/
     }
     #plFlag,
     #gbFlag {
         margin-top: 0;
-    }
-}
-@media(min-width: 1200px){
-    .container{
-        width: 1000px;
-    }
-     #topBtn {
-        width: 70px;
-        height: 70px;
-        
+        position: relative;
+        top: 10px;
     }
 }
 
-@media(min-width: 1400px){
-    .container{
+@media(min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+    #topBtn {
+        width: 70px;
+        height: 70px;
+    }
+    .navContainer {
+        float: right;   /*over 1200 px float : right*/
+        margin-top: -21px; /*over 1200 px margin-top : -21px*/
+        
+    }
+    .navContainer .navMenu li {
+        display: inline-block;
+        padding: 10px;
+    }
+    .navContainer .navMenu li:first-child {
+        margin-top: 0;
+        padding-left: 10px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .container {
         width: 1200px;
     }
-     
 }
