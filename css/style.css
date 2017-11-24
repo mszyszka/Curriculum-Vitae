@@ -305,6 +305,27 @@ footer {
     .container{
         width: 800px;
     }
+    .hamburgerContainer{
+        display: none;
+    }
+    nav .navMenu {
+    display: block;
+}
+    h1{
+        display: inline-block;
+    }
+    .navContainer  {
+        display: inline-block;
+    }
+    .navContainer .navMenu  {
+        padding-bottom: 0;
+    }
+    .navContainer .navMenu li  {
+        display: inline-block;
+    }
+    .navContainer .navMenu li:first-child  {
+        margin-top: 0;
+    }
 }
 @media(min-width: 1200px){
     .container{
