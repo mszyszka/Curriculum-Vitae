@@ -172,8 +172,9 @@ nav ul li:last-child {
 }
 
 
-/*//////////////////////////////personalData style/////////////////////////////*/
+/*//////////////////////////////social-media/////////////////////////////*/
 
+/*
 #personalData {
     font-size: 1.2rem;
 }
@@ -181,6 +182,37 @@ nav ul li:last-child {
 #personalData span {
     font-weight: 500;
 }
+*/
+
+.s-media-row1 {
+    margin-top: 80px;
+    width: 50%;
+    text-align: right;
+
+}
+.s-media-row2 {
+    margin-top: 80px;
+    width: 50%;
+    text-align: left;
+
+}
+.media-icon {
+    font-size: 6rem;
+}
+
+.fa-linkedin-square:hover {
+    cursor: pointer;
+    color: #0077B5;
+}
+
+.fa-facebook-square:hover{
+        color: #3B5998;
+        cursor: pointer;
+
+
+}
+
+
 
 
 /*//////////////////////////////////end /////////////////////////////////////*/
@@ -199,7 +231,7 @@ nav ul li:last-child {
 /*///////////////////////////////skills section style///////////////////////////*/
 
 #skills {
-    margin-top: 50px;
+    margin-top: 80px;
     font-size: 1.1rem;
     font-style: italic;
 }
@@ -274,10 +306,35 @@ footer {
 
 
 /*////////////////////////////////////////end/////////////////////////////////*/
-
+@media(min-width: 500px) {
+    .s-media-row1{
+        margin-top: 110px;
+    }
+    
+    .s-media-row2{
+        margin-top: 110px;
+    }
+    
+    .s-media-row1 .media-icon {
+        margin-right: 10px;
+    }
+     .s-media-row2 .media-icon {
+        margin-left: 10px;
+    }
+    #skills{
+        margin-top: 110px;
+    }
+}
 @media(min-width: 768px) {
     header {
         margin-top: 50px;
+    }
+    .s-media-row1{
+        margin-top: 160px;
+    }
+    
+    .s-media-row2{
+        margin-top: 160px;
     }
     #aboutMe {
         margin-top: 100px;

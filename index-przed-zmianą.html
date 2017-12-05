@@ -5,6 +5,7 @@
     <title>Michał Szyszka - Curriculum Vitae</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/01cdbdbac6.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,500,500i,600,600i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -13,14 +14,15 @@
     <script src="jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet"> </head>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
 
 <body>
     <div class="container">
         <header class="siteHeader">
             <h1>Michał Szyszka<div id="lineDiv"></div><br/><span>Curriculum Vitae</span></h1> </header>
         <section>
-            <nav>
+            <nav class="navContainer">
                 <div class="hamburgerContainer" onclick="myHamburger(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -38,25 +40,26 @@
                         <a href="index.html"><img src="img/flaga-polski.jpg" alt="flaga Polski"></a>
                     </li>
                     <li id="gbFlag">
-                        <a href="index-english.html"><img src="img/flaga-wielkiej-brytanie.jpg" alt="flaga Wielkiej Brytanii"></a>
+                        <a href="index-english2.html"><img src="img/flaga-wielkiej-brytanie.jpg" alt="flaga Wielkiej Brytanii"></a>
                     </li>
                 </ul>
             </nav>
+            <div class="clearfix"></div>
         </section>
         <section id="aboutMe">
             <div class="row">
                 <div class="col-sm-12 col-md-5">
                     <article id="personalData"> Michał Szyszka
-                        <br/> born: 27.09.1992r
+                        <br/> ur.: 27.09.1992r
                         <br/> mail:<span> m.szyszka.krakow@gmail.com</span>
                         <br/> tel:<span> 728-727-153</span> </article>
                 </div>
                 <div class="col-sm-12 col-md-7">
                     <article id="myTxt">
-                        <p> Hi.<br/>
-                            <br/> I’m Michał and if you're looking for a junior front end developer, it will be my pleasure to take job or internship in your company. Few months ago I decided to quit my job and start learning computer programming. I was learning by myself, but now i need your help. I feel, this is moment when i should work with more advanced programmers to correctly develop my skills. If you can help me, I will repay you honest work and commitment.
+                        <p> Cześć.<br/>
+                            <br/>Nazywam się Michał i jeśli szukasz junior front-end developera, chętnie podejmę pracę lub staż w Twojej firmie. Kilka miesięcy temu zdecydowałem się odejść ze swojej pracy i nauczyć programować. Do tej pory uczyłem się sam, ale teraz potrzebuje pomocy. Czuje że to moment, w którym aby poprawnie rozwijać swoje umiejętności, powinienem rozpocząć prace z bardziej doświadczonymi programistami. Jeśli możesz mi pomóc, odwdzięczę się rzetelną pracą i zaangażowaniem.
                             <br/>
-                            <br/> Thank you for your time and have a good day!
+                            <br/> Dzięki za poświęcony czas i miłego dnia,
                             <br/>Michał Szyszka. </p>
                     </article>
                 </div>
@@ -69,23 +72,23 @@
                         <h1><span>JAVA</span>SCRIPT</h1>
                         <br/>
                         <ul>
-                            <li>I know data types in JavaScript</li>
-                            <li>I can write fuction</li>
-                            <li>I can write loop</li>
-                            <li>Using the function <strong>document.getElementById()</strong> and command .innerHTML I can grab element with pointed Id i and switch inner HTML of it</li>
-                            <li>Using the function <strong>setTimeout()</strong>, I can run the function after the time I set</li>
-                            <li>I know how to made concatenation using "+" operator</li>
-                            <li>I can define table with specified amount of data</li>
+                            <li>Znam typy danych w JavaScript</li>
+                            <li>Potrafię napisać funkcje</li>
+                            <li>Potrafię napisać pętle for</li>
+                            <li>Dzięki funkcji <strong>document.getElementById()</strong> i komendzie .innerHTML potrafię złapać element o wskazanym Id i dowolnie podmienić jego HTML</li>
+                            <li>Dzięki funkcji <strong>setTimeout()</strong>, potrafię uruchomić dowolną funkcję po określonym przeze mnie czasie</li>
+                            <li>Potrafię dokonać konkatenacji za pomoca operatora "+"</li>
+                            <li>Potrafię zdefiniować tablicę o określonej ilości miejsc</li>                            <br />
+
+                            <li>Potrafię wywołać funkcję w momencie załadowania się strony dzięki zdarzeniu <strong>onload</strong></li>
+                            <li>Dzięki zdarzeniu <strong>onclick</strong> zapisanemu jako atrybut html lub wywołanemu dzięki metodzie addEventListener(), potrafię wywołać funkcję w momencie kliknięcia na dany element</li>
+                            <li>Przy pomocy właściwości <strong>.value</strong> potrafię pobrać wartość z pola edycyjnego</li>
+                            <li>Potrafię pobrać długość łańcucha dzięki komendzie <strong>.length</strong></li>
+                            <li>Dzięki funkcjom <strong>toLowerCase()</strong> i <strong>toUppercase()</strong> potrafię zmienić wielkość liter w łańcuchu</li>
                             <br />
-                            <li>I can start function when page is loading using <strong>onload</strong> writed in opening &lt;body&gt; tag</li>
-                            <li>Using <strong>onclick</strong> as a html atribute, or thanks to addEventListener() metod, I can start function when pointed element is clicked</li>
-                            <li>By using <strong>.value</strong> property, I can take value from editing field</li>
-                            <li>I can take length of chain using <strong>.length</strong> property</li>
-                            <li>By using <strong>toLowerCase()</strong> and <strong>toUppercase()</strong> function, I can change font to upper or lowercase</li>
-                            <br />
-                            <li>I can get to a specific character in the chain</li>
-                            <li>By using <strong>substr()</strong> I can pull out selected parts of chain</li>
-                            <li>I can round numbers using:
+                            <li>Potrafię dostać się do konkretnego znaku w łańcuchu</li>
+                            <li>Dzięki funkcji <strong>substr()</strong> potrafię wyjąć dowolny fragment łańcucha</li>
+                            <li>Potrafię zaokrąglać liczby dzięki funkcjom:
                                 <ul>
                                     <li><strong>Math.round()</strong></li>
                                     <li><strong>Math.floor()</strong></li>
@@ -93,7 +96,7 @@
                                     <li><strong>Math.trunc()</strong></li>
                                 </ul>
                             </li>
-                            <li>Using <strong>replace()</strong> function, I can replace chosen part of chain</li>
+                            <li>Za pommocą funkcji <strong>replace()</strong> potrafię zastapić wybrany fragment łańcucha</li>
                         </ul>
                     </article>
                 </div>
@@ -103,44 +106,45 @@
                         <br/>
                         <br/>
                         <a href="https://github.com/mszyszka" target="_blank">
-                            <p>See how I'm using CSS code on GitHub!</p>
+                            <p>Aby zobaczyć jak posługuję się kodem CSS zerknij do mojego github'a</p>
                         </a>
                         <ul>
-                            <li>I understand responsive web design, you can see my projects:
+                            <li>Rozumiem Responsive Web Design, zobacz moje projekty:
                                 <ul>
                                     <li><a href="http://xn--cv-micha-szyszka-qyc.pl/MyTodayMusic-Responsive/" target="_blank">MyToodayMusic</a></li>
                                     <li><a href="http://xn--cv-micha-szyszka-qyc.pl/Bootstrap-site/" target="_blank">BootstrapSite</a></li>
                                     <li><a href="http://xn--cv-micha-szyszka-qyc.pl/Responsive-Menu---Example/" target="_blank">ExampleMenu</a></li>
                                 </ul>
                             </li>
-                            <li>I know base and advanced CSS selectors</li>
-                            <li>I know what it is and understand inheritance.</li>
-                            <li>I know CSS hierarchy</li>
-                            <li>I can set block elements in the same line by using display property and inline-block value. I can also do this with float: left</li>
-                            <li>I can point the difference between id and class</li>
-                            <li>I know the difference between serif and sans-serif fonts</li>
-                            <li>I understand RGB colors notation</li>
-                            <li>I can use transforming functions</li>
-                            <li>I can create a smooth transition between two states of an element in CSS using the transition property </li>
+                            <li>Znam podstawowe i zaawansowane selektory CSS</li>
+                            <li>Wiem na czym polega i rozumiem jak działa dziedziczenie</li>
+                            <li>Znam hierarchie stylów CSS</li>
+                            <li>Potrafię szerogowo układać elemenety blokowe dzięki właściwości display i jej wartości inline-block</li>
+                            <li>Znam różnice między class a id i wiem kiedy używać poszczegulnych.</li>
+                            <li>Znam różnice między czcionkami serif i sans-serif</li>
+                            <li>Znam i rozumiem zapis kolorów RGB</li>
+                            <li>Potrafię używać funkcji transformujących</li>
+                            <li>Potrafię stworzyć płynne przejście między dwoma stanami elementu w CSS dzięki właściwości transition</li>
+                            <li>Używając właściwości clip-path i transition potrafię stwożyć prostą animację.</li>
                         </ul>
                     </article>
                 </div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <div class="col-sm-12 col-md-6">
                     <article id="html">
                         <h1>HTML</h1>
                         <br/>
                         <br/>
                         <a href="https://github.com/mszyszka" target="_blank">
-                            <p>See how I'm using HTML code on GitHub!</p>
+                            <p>Aby zobaczyć jak posługuję się kodem HTML zerknij do mojego github'a</p>
                         </a>
                         <ul>
-                            <li>I'm using new<strong>HTML5</strong>tags to define individual parts of the code </li>
-                            <li>I care for proper semantic of the code</li>
-                            <li>I'm using google fonts</li>
-                            <li>I can create lists and inside lists</li>
-                            <li>I can make hyperlink that take us to pointed place on the website</li>
+                            <li>Posługuję się nowymi znacznikami <strong>HTML5</strong> w celu precyzyjnego definiowania poszczegulnych częćści kodu</li>
+                            <li>Posługuję się porpawnie znacznikami strukturalnymi</li>
+                            <li>Dbam o odpowiednią <strong>semantykę</strong> kodu</li>
+                            <li>Korzystam z Google Fonts</li>
+                            <li>Potrafię wykonać hiperłączę które przeniesie nas w wybrane miejsce na stronie</li>
                         </ul>
                     </article>
                 </div>
@@ -149,8 +153,8 @@
                         <h1> TECHNOLOGIE</h1>
                         <br/>
                         <ul>
-                            <li>Bootstrap - used in CV code</li>
-                            <li>jQuery - used in CV code
+                            <li>Bootstrap - Używam grida Bootsrapa w kodzie tego CV</li>
+                            <li>jQuery - użyta w kodzie CV
                                 <ul>
                                     <li>Top button</li>
                                     <li>scrollTo</li>
@@ -158,7 +162,7 @@
                             </li>
                             <li>Wordpress
                                 <ul>
-                                    <li><a href="http://www.xn--micha-szyszka-portfolio-g2d.pl/" target="_blank">My portfolio</a></li>
+                                    <li><a href="http://www.xn--micha-szyszka-portfolio-g2d.pl/" target="_blank">Moje portfolio na Wordpress</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -167,70 +171,13 @@
             </div>
         </section>
         <footer>
-            <p>Autor: Michał Szyszka | 2017r. All rights reserved &copy;</p>
+            <p>Autor: Michał Szyszka | 2017r. Wszystkie prawa zastrzeżone &copy;</p>
             <p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).</p>
             <div class="logo">Michał<span>Szyszka</span></div>
         </footer>
         <button id="topBtn">TOP</button>
     </div>
-    <script>
-        //Menu open
-        function myHamburger(x) {
-            x.classList.toggle("change");
-            document.getElementsByClassName("navMenu")[0].classList.toggle('navOpen');
-        }
-        //Top button:
-        // 1. lets first listen for the scroll event
-        $(window).scroll(function () {
-            // top value in this case 0
-            var windowScroll = $(this).scrollTop();
-            // determine when to show button
-            var showScrollBtn = 120;
-            // fadein / fadeout back to  top button
-            if (windowScroll > showScrollBtn) {
-                $('#topBtn').fadeIn();
-            }
-            else {
-                $('#topBtn').fadeOut();
-            }
-        });
-        // on click:
-        $('#topBtn').click(function () {
-            $('body,html').animate({
-                // position you want  scroll to
-                scrollTop: 0
-            }, 500);
-        });
-        // scroll to function
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $('#link1').click(function () {
-                $.scrollTo($("#js").offset().top - 30, 500);
-            });
-        });
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $('#link2').click(function () {
-                $.scrollTo($("#css").offset().top - 30, 600);
-            });
-        });
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $('#link3').click(function () {
-                $.scrollTo($("#html").offset().top - 30, 700);
-            });
-        });
-        jQuery(function ($) {
-            //scroll reset
-            $.scrollTo(0);
-            $('#link4').click(function () {
-                $.scrollTo($("#tech"), 800);
-            });
-        });
-    </script>
+    <script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
