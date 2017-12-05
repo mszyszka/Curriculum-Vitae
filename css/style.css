@@ -11,7 +11,8 @@ body {
 /*//////////////////////////////header style/////////////////////////////*/
 
 header {
-    margin-top: 25px;
+    margin-top: 50px;
+/*    overflow: auto;*/
 }
 
 h1 {
@@ -161,6 +162,8 @@ a:active {
 nav ul li:last-child {
     /*    margin-top: 50px;*/
 }
+
+
 
 
 /*///////////////////////////////////end/////////////////////////////////*/
@@ -374,6 +377,19 @@ footer {
         margin-top: 50px; /*over 1200 px margin-top : -21px*/
         
     }
+    .sticky {
+        position: fixed;    
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        border-top: 0;
+        padding: 20px 0;
+        margin-top: 0px;
+        background: #FFFFFF;
+
+    
+    }
     .navContainer .navMenu {
         padding-bottom: 0;
         display: inherit;
@@ -400,6 +416,7 @@ footer {
 }
 
 @media(min-width: 1200px) {
+    
     .container {
         width: 1000px;
     }
@@ -419,6 +436,11 @@ footer {
     .navContainer .navMenu li:first-child {
         margin-top: 0;
         padding-left: 10px;
+    }
+    
+    .navContainer.sticky  .navMenu li {
+        margin-right: 15px;
+        margin-left: 15px;
     }
 }
 
