@@ -227,11 +227,16 @@ a:active {
 
 .linkSpot-1 {
     float: right;
-    width: 83px;
-    height: 83px;
+    width: 82.3px;
+    height: 82.3px;
     margin-top: 6px;
     background: #212529;
     border-radius: 20%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 20px 0;
 }
 .linkSpot-2 {
     float: left;
@@ -280,7 +285,7 @@ a:active {
 .skills-git-col-1, 
 .skills-git-col-2, 
 .skills-git-col-3 {
-    padding: 20px 15px;
+    padding: 0px 15px;
     width: 50%;
 }
 
@@ -291,7 +296,7 @@ a:active {
 
 footer {
     text-align: center;
-    padding: 50px 0 50px 0;
+    padding: 70px 0 50px 0;
     font-size: 0.7rem;
 }
 
@@ -354,8 +359,17 @@ footer {
       .s-media-row2 .media-icon {
         margin-left: 10px;
     }
+     .linkSpot-1 {
+        margin-right: 10px;
+    }
+      .linkSpot-2 {
+        margin-left: 10px;
+    }
     #skills-git{
-        margin-top: 110px;
+        margin-top: 33.15px;
+    }
+    footer {
+        padding-top: 110px;
     }
 }
 
@@ -396,6 +410,7 @@ footer {
         width: 65px;
         height: 65px;
     }
+    
 }
 
 @media(min-width: 992px) {
