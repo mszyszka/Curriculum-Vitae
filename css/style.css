@@ -12,7 +12,6 @@ body {
 
 header {
     margin-top: 50px;
-    overflow: auto;
 }
 
 h1 {
@@ -101,6 +100,7 @@ h1 span {
 
 /*//////////////////////////////navigation style/////////////////////////////*/
 
+
 nav .navMenu {
     text-align: center;
     display: none;
@@ -172,11 +172,16 @@ a:active {
     display: block;
 }
 
-nav ul li:last-child {
-    /*    margin-top: 50px;*/
+.stickyNavMenu {
+     position: fixed;    
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        border-top: 0;
+        margin-top: 55px;
+        background: #FFFFFF;
 }
-
-
 
 
 /*///////////////////////////////////end/////////////////////////////////*/
@@ -189,16 +194,6 @@ nav ul li:last-child {
 
 
 /*//////////////////////////////social-media/////////////////////////////*/
-
-/*
-#personalData {
-    font-size: 1.2rem;
-}
-
-#personalData span {
-    font-weight: 500;
-}
-*/
 
 .s-media-row1 {
     margin-top: 80px;
@@ -350,7 +345,7 @@ footer {
 }
 @media(min-width: 768px) {
     header {
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .s-media-row1{
         margin-top: 160px;
@@ -392,12 +387,26 @@ footer {
     h1 {
         display: inline-block;
     }
+    #aboutMe {
+        margin-top: 55px;
+    }
     .navContainer {
         float: left;   /*over 1200 px float : right*/
         margin-top: 50px; /*over 1200 px margin-top : -21px*/
         
     }
-    .sticky {
+
+    .stickyNavMenu {
+        position: relative;
+        margin-top: 0px;
+    }
+    
+    /*    Im adding position: inherit; to class stickyHeader that it would not be sticky when hamburger btn is switch(it is switch over 992px) to inline menu(Then nav should be sticky, not header).*/
+    .stickyHeader {
+        position: inherit;    
+        
+    }
+    .stickyNav {
         position: fixed;    
         width: 100%;
         left: 0;
@@ -407,6 +416,9 @@ footer {
         padding: 20px 0;
         margin-top: 0px;
         background: #FFFFFF;
+        -webkit-box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.55);
+        box-shadow: 0px 8px 5px -5px rgba(0, 0, 0, 0.55);
     }
     .navContainer .navMenu {
         padding-bottom: 0;
@@ -456,7 +468,7 @@ footer {
         padding-left: 10px;
     }
     
-    .navContainer.sticky  .navMenu li {
+    .navContainer.stickyNav  .navMenu li {
         margin-right: 15px;
         margin-left: 15px;
     }

@@ -5,7 +5,6 @@
     <title>Michał Szyszka - Curriculum Vitae</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://use.fontawesome.com/01cdbdbac6.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,300i,400,400i,500,500i,600,600i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -13,56 +12,73 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="jquery.scrollTo.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <link href="css/reset.css" type="text/css" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" >
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="css/style.css" type="text/css" >
     </head>
 
 <body>
+    
+    
+<!--I want make links to linked in and facebook-->
+   <!-- sprawdzić do czego pozycjonowane jest open menu na moblu i wypozycjonować go do sticky headera.-->
+    <!-- Sprawdzić czy nie można podpiąć funkcji otwierającej do menu do navContainera-->
+    <!-- Zrobić resume, wyrzucić portfoljio na wordpresie, -->
+    
+    
+    
     <div class="container">
+        
         <header class="siteHeader">
-            <h1>Michał Szyszka<div id="lineDiv"></div><br/><span>Curriculum Vitae</span></h1> </header>
-        <section>
-            <nav class="navContainer">
-                <div class="hamburgerContainer" onclick="myHamburger(this)">
+            <h1>Michał Szyszka<div id="lineDiv"></div><br/><span>Curriculum Vitae</span></h1>
+            <div class="hamburgerContainer" onclick="myHamburger(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-                </div>
-                <div class="clearfix"></div>
-                <ul class="navMenu">
-                    <li><a href="#" id="link1">JavaScript</a></li>
-                    <li><a href="#" id="link2">CSS</a></li>
-                    <li><a href="#" id="link3">HTML</a></li>
-                    <li><a href="#" id="link4">Technologie</a></li>
-                    <li><a href="http://www.xn--micha-szyszka-portfolio-g2d.pl/" target="_blank">Portfolio</a></li>
-                    <li><a href="https://github.com/mszyszka" target="_blank">GitHub</a></li>
-                    <li id="plFlag">
-                        <a href="index.html"><img src="img/flaga-polski.jpg" alt="flaga Polski"></a>
-                    </li>
-                    <li id="gbFlag">
-                        <a href="index-english2.html"><img src="img/flaga-wielkiej-brytanie.jpg" alt="flaga Wielkiej Brytanii"></a>
-                    </li>
-                </ul>
-            </nav>
+            </div>
+            
+            <section>
+                <nav class="navContainer">
+
+                    <div class="clearfix"></div>
+                    <ul class="navMenu">
+                        <li><a href="#" id="link1">JavaScript</a></li>
+                        <li><a href="#" id="link2">CSS</a></li>
+                        <li><a href="#" id="link3">HTML</a></li>
+                        <li><a href="#" id="link4">Technologie</a></li>
+                        <li><a href="http://www.xn--micha-szyszka-portfolio-g2d.pl/" target="_blank">Portfolio</a></li>
+                        <li><a href="https://github.com/mszyszka" target="_blank">GitHub</a></li>
+                        <li id="plFlag">
+                            <a href="index.html"><img src="img/flaga-polski.jpg" alt="flaga Polski"></a>
+                        </li>
+                        <li id="gbFlag">
+                            <a href="index-english2.html"><img src="img/flaga-wielkiej-brytanie.jpg" alt="flaga Wielkiej Brytanii"></a>
+                        </li>
+                    </ul>
+                </nav>
             <div class="clearfix"></div>
-        </section>
+            </section>
+            
+        </header>
+        
         <section id="aboutMe">
             <div class="row">
-                <div class="col-sm-12 col-md-5">
-                    <article id="personalData"> Michał Szyszka
-                        <br/> ur.: 27.09.1992r
-                        <br/> mail:<span> m.szyszka.krakow@gmail.com</span>
-                        <br/> tel:<span> 728-727-153</span> </article>
-                </div>
-                <div class="col-sm-12 col-md-7">
+                <div class="col-sm-12 col-md-6">
                     <article id="myTxt">
                         <p> Cześć.<br/>
-                            <br/>Nazywam się Michał i jeśli szukasz junior front-end developera, chętnie podejmę pracę lub staż w Twojej firmie. Kilka miesięcy temu zdecydowałem się odejść ze swojej pracy i nauczyć programować. Do tej pory uczyłem się sam, ale teraz potrzebuje pomocy. Czuje że to moment, w którym aby poprawnie rozwijać swoje umiejętności, powinienem rozpocząć prace z bardziej doświadczonymi programistami. Jeśli możesz mi pomóc, odwdzięczę się rzetelną pracą i zaangażowaniem.
+                            <br/>Nazywam się Michał i jeśli szukasz junior front-end developera, chętnie podejmę pracę lub staż w Twojej firmie. Kilka miesięcy temu zdecydowałem się odejść ze swojej pracy i nauczyć programować. Do tej pory uczyłem się sam, ale czuje że to moment w którym aby poprawnie rozwijać swoje umiejętności, powinienem rozpocząć prace z bardziej doświadczonymi programistami. Jeśli szukasz Junior Front-end Developera, skontaktuj się ze mną. Odwdzięczę się rzetelną pracą i zaangażowaniem.
                             <br/>
                             <br/> Dzięki za poświęcony czas i miłego dnia,
                             <br/>Michał Szyszka. </p>
                     </article>
                 </div>
+                <div class="col-sm-6 col-md-3 s-media-row1">
+                    <i class="fa fa-linkedin-square media-icon" aria-hidden="true"></i>
+                </div>
+                <div class="col-sm-6 col-md-3 s-media-row2">
+                    <i class="fa fa-facebook-square media-icon" aria-hidden="true"></i>
+                </div>
+                
             </div>
         </section>
         <section id="skills">
