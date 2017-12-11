@@ -391,8 +391,9 @@ footer {
         margin-top: 55px;
     }
     .navContainer {
-        float: left;   /*over 1200 px float : right*/
-        margin-top: 50px; /*over 1200 px margin-top : -21px*/
+    display: inline-block;
+    float: right;
+    margin-top: -20px;
         
     }
 
@@ -431,7 +432,6 @@ footer {
     }
     .navContainer .navMenu li {
         display: inline-block;
-        padding: 10px 15px; /*over 1200 px padding : 10px*/
     }
     .navContainer .navMenu li:first-child {
         margin-top: 0;
