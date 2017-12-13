@@ -209,6 +209,7 @@ a:active {
 }
 .media-icon {
     font-size: 6rem;
+    color: #222222;
 }
 
 .fa-linkedin-square:hover {
@@ -227,10 +228,10 @@ a:active {
 
 .linkSpot-1 {
     float: right;
-    width: 82.3px;
-    height: 82.3px;
+    width: 83.3px;
+    height: 83.3px;
     margin-top: 6px;
-    background: #212529;
+    background: #222222;
     border-radius: 20%;
     color: #FFFFFF;
     text-align: center;
@@ -241,6 +242,15 @@ a:active {
 .linkSpot-2 {
     float: left;
     font-size: 6rem;
+    color: #222222;
+}
+
+.linkSpot-1:hover {
+    background: #000000;
+}
+.linkSpot-2:hover {
+    
+    color: #000000;
 }
 
 
