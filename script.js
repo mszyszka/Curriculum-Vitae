@@ -61,7 +61,7 @@
             });
         });
 
-   //Sticky .navContainer
+   /*//Sticky .navContainer
 
         $(document).ready(function() {
 			// grab the initial top offset of the navigation 
@@ -86,8 +86,11 @@
 				stickyNav();
 			});
 		});
+        I realized i dont need it
+        */
 
- //Sticky header for width less then 992px;
+
+ //Sticky header
 
         $(document).ready(function() {
 			// grab the initial top offset of the navigation 
@@ -101,8 +104,10 @@
 			    // otherwise change it back to relative
 			    if (scrollTop > stickyHeaderTop) { 
 			        $('.siteHeader').addClass('stickyHeader');
+			        $('#aboutMe').addClass('aboutMeMarginTop'); /*When header sticks, im adding proper margin-top to #aboutMe section, below it to prevent covering part of #aboutMe section */
 			    } else {
 			        $('.siteHeader').removeClass('stickyHeader'); 
+			        $('#aboutMe').removeClass('aboutMeMarginTop'); 
 			    }
 			};
 
@@ -116,7 +121,7 @@
 //Sticky navMenu;
 //Im making it becouse when im opening my menu on sticky header menu is on the  top of the site.
 
-        $(document).ready(function() {
+       /* $(document).ready(function() {
 			// grab the initial bottom offset of the header 
 		   	var stickyHeaderTop = $('.siteHeader').offset().top;
 		   	
@@ -139,4 +144,7 @@
 				stickyNavMenu();
 			});
 		});
+                I realized i dont need it to
+
+        */
         
