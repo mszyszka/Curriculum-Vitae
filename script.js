@@ -1,10 +1,18 @@
- //Menu open
+        ///////////////////////////////////////////Menu open///////////////////////////////////////////
+
+
         function myHamburger(x) {
             x.classList.toggle("change");
             document.getElementsByClassName("navMenu")[0].classList.toggle('navOpen');
         }
 
-        //Top button:
+        //////////////////////////////////////////End of menu open//////////////////////////////////////
+
+
+
+        //////////////////////////////////////////Top button///////////////////////////////////////////
+
+
         // 1. lets first listen for the scroll event
         $(window).scroll(function () {
             // top value in this case 0
@@ -28,42 +36,12 @@
             }, 500);
         });
 
-        // scroll to function
-        jQuery(function($){
-            //scroll reset
-            $.scrollTo(0);
-            $('#link1').click(function(){
-                $.scrollTo($("#js").offset().top -210,500);   
-            });
-        });
+        ////////////////////////////////////////End of top button/////////////////////////////////////
 
-        jQuery(function($){
-            //scroll reset
-            $.scrollTo(0);
-            $('#link2').click(function(){
-                $.scrollTo($("#css").offset().top -210,600);   
-            });
-        });
 
-        jQuery(function($){
-            //scroll reset
-            $.scrollTo(0);
-            $('#link3').click(function(){
-                $.scrollTo($("#html").offset().top -210,700);   
-            });
-        });
+        ///////////////////////////////////////////Sticky navContainer///////////////////////////////////////////
 
-        jQuery(function($){
-            //scroll reset
-            $.scrollTo(0);
-            $('#link4').click(function(){
-                $.scrollTo($("#tech").offset().top -210,800);  
-            });
-        });
-
-   /*//Sticky .navContainer
-
-        $(document).ready(function() {
+        /*$(document).ready(function() {
 			// grab the initial top offset of the navigation 
 		   	var stickyNavTop = $('.navContainer').offset().top;
 		   	
@@ -86,11 +64,17 @@
 				stickyNav();
 			});
 		});
+        
         I realized i dont need it
-        */
+        
+        End of sticky navContainer*/
+        
+        //////////////////////////////////////////////   End    //////////////////////////////////////////////
 
 
- //Sticky header
+
+
+        ///////////////////////////////////////////Sticky header///////////////////////////////////////////
 
         $(document).ready(function() {
 			// grab the initial top offset of the navigation 
@@ -104,9 +88,11 @@
 			    // otherwise change it back to relative
 			    if (scrollTop > stickyHeaderTop) { 
 			        $('.siteHeader').addClass('stickyHeader');
+			        $('.navMenu').addClass('navMenuShadow');/*When header sticks, im adding to .navMenu class .navMenuShadow that delete shadow from ul*/
 			        $('#aboutMe').addClass('aboutMeMarginTop'); /*When header sticks, im adding proper margin-top to #aboutMe section, below it to prevent covering part of #aboutMe section */
 			    } else {
 			        $('.siteHeader').removeClass('stickyHeader'); 
+                    $('.navMenu').removeClass('navMenuShadow');
 			        $('#aboutMe').removeClass('aboutMeMarginTop'); 
 			    }
 			};
@@ -118,8 +104,13 @@
 			});
 		});
 
-//Sticky navMenu;
-//Im making it becouse when im opening my menu on sticky header menu is on the  top of the site.
+        ////////////////////////////////////////End of sticky header/////////////////////////////////////////
+
+
+
+        //////////////////////////////////////////Sticky navMenu///////////////////////////////////////////
+
+        //Im making it becouse when im opening my menu on sticky header menu is on the  top of the site. - I fixed it in simpler way
 
        /* $(document).ready(function() {
 			// grab the initial bottom offset of the header 
@@ -147,4 +138,5 @@
                 I realized i dont need it to
 
         */
-        
+
+        //////////////////////////////////////////      End     ///////////////////////////////////////////
